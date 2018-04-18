@@ -15,12 +15,7 @@ class DatabaseManager {
   }
 
   void sendBook(Book book) {
-    reference.child(book.id).set({
-      'title': book.title,
-      'description': book.description,
-      'thumb': book.thumb,
-      'id': book.id
-    });
+    reference.child(book.id).set(book.toJson());
   }
 
   void deleteBook(Book book) {

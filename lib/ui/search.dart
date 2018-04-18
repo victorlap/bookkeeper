@@ -43,6 +43,7 @@ class _SearchScreen extends State<SearchScreen> {
               ],
             ),
           ),
+          new Divider(),
           new Flexible(
             child: new FutureBuilder<Volumes>(
               future: _volumes,
