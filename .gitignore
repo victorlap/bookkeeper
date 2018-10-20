@@ -8,3 +8,5 @@ build/
 ios/.generated/
 packages
 .flutter-plugins
+lib/api/client.dart
+android/app/google-services.json
